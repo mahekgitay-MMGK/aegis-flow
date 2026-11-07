@@ -44,4 +44,8 @@ print("is live: ", is_live)
 print("simple content: ", simple_content)
 print(type(project_name), type(total_file), type(total_cost), type(total_saved), type(is_live), type(simple_content))
 
-    
+# Interviwe question 
+# What is variable and data type
+"""
+variable is the Box that store Data name lable and these such of type og data in int,float,str,bool,bytes
+"""
