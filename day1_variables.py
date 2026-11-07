@@ -27,3 +27,21 @@ print(salary_goal)
 print(dream_100)
 print(my_content)
 print(type(my_name),type(my_age),type(salary_goal),type(dream_100),type(my_content))
+
+# Project
+project_name="Aegis-flow"
+total_file=0
+total_cost=0.0
+total_saved=0.0
+is_live=False
+simple_content=b"hello world"
+
+print("project name: ",project_name)
+print("total file: ", total_file)
+print("total cost: ", total_cost)
+print("total saved: ", total_saved)
+print("is live: ", is_live) 
+print("simple content: ", simple_content)
+print(type(project_name), type(total_file), type(total_cost), type(total_saved), type(is_live), type(simple_content))
+
+    
