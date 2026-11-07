@@ -13,3 +13,17 @@ print(file_size)
 print(total_cost)
 print(is_dublicate)
 print(content)
+
+# Task
+my_name="Mahek"
+my_age=19
+salary_goal=20000.0
+dream_100=True
+my_content=b"My first file"
+
+print(my_name)
+print(my_age)
+print(salary_goal)
+print(dream_100)
+print(my_content)
+print(type(my_name),type(my_age),type(salary_goal),type(dream_100),type(my_content))
