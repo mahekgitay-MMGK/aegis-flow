@@ -32,3 +32,19 @@ for cost in costs:
     else:
         print(cost,"Ok -Send")
 
+### Project
+project_name="Aegis-flow"
+files=["report.pdf","notes.pfd","resume.pdf"]
+costs=[0.05,0.10,0.03]
+
+print(project_name)
+print("Total_files",3)
+
+for file in files:
+    print("Checking",file)
+
+for cost in costs:
+    if cost > 0.05:
+        print("Too costly ",cost)
+    else:
+        print("ok send",cost)
