@@ -18,3 +18,17 @@ Common loop control statements:
 - continue: skips the current iteration and continues next
 - pass: does nothing, used as placeholder
 """
+#EXample
+
+files=["resume.pdf","report.pdf","notes.pdf"]
+for file in files:
+    print("Checking",file)
+
+## Task
+costs=[0.05,0.10,0.03]
+for cost in costs:
+    if cost > 0.05:
+        print(cost,"Too costly stop")
+    else:
+        print(cost,"Ok -Send")
+
