@@ -37,3 +37,31 @@ def check_duplicate(is_duplicate):
 print(check_duplicate(False))
 print(check_duplicate(True))
     
+### Project
+
+project_name=("Aegis Flow")
+print(project_name)
+
+def check_duplicate(is_duplicate):
+    if is_duplicate== True:
+        return "Duplicate file"
+    else:
+        return "New file - send "
+
+def too_costly(cost):
+    return cost >= 0.05
+
+print(check_duplicate(True))
+print(check_duplicate(False))
+print(too_costly(0.10))
+print(too_costly(0.20))
+print(too_costly(0.03))
+print(too_costly(0.05))
+
+#### Interviwe Question
+"""
+def is make your own fuction. makme once use thousand of times.
+example: if male one def called too_cosly(cost):
+                                return cost > 0.05
+                                then we called fuction too costly(0.10) it's give you true
+"""
