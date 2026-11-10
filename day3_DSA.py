@@ -5,3 +5,5 @@ for cost in costs:
     if cost > 0.05:
         count=count +1
 print("Too costly count: ",count)
+
+"Here we can count files it's help us during 100000000 of files"
