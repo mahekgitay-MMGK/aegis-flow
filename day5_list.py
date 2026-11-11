@@ -33,11 +33,28 @@ print("Total files now: ",len(files))'''
 
 ## Task
 
-costs=[0.03,0.05,0.10,0.20,0.50]
+'''costs=[0.03,0.05,0.10,0.20,0.50]
 print("Total cost: ",len(costs))
 
 costs.append(0.40)
 print(costs)
 costs.remove(0.03)
 print(costs)
-print("Now total cost: ",len(costs))
+print("Now total cost: ",len(costs))'''
+
+### project
+project_name="aegis-flow"
+files=["report.pdf","docoment.pdf","resume.pdf","student.pdf"]
+costs=[0.03,0.05,0.10,0.20,0.50]
+
+print(project_name)
+print("files: ",files,"Total: ",len(files))
+
+files.append("notes.pdf")
+print("after append: ",files,"Total new: ",len(files))
+
+for cost in costs:
+    if cost > 0.05:
+        print(cost,"Too costly")
+    else:
+        print(cost,"ok")
