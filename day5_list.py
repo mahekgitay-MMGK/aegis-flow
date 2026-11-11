@@ -20,7 +20,7 @@ elements and fast membership checks. A list comprehension is a concise way to
 describe a new list derived from an iterable.
 """
 # Example
-files=["report.pdf","docoment.pdf","resume.pdf","student.pdf"]
+'''files=["report.pdf","docoment.pdf","resume.pdf","student.pdf"]
 
 print(files)
 print("Total files",len(files))
@@ -29,4 +29,15 @@ files.extend(["report.pdf"])
 files.remove("docoment.pdf")
 
 print(files)
-print("Total files now: ",len(files))
+print("Total files now: ",len(files))'''
+
+## Task
+
+costs=[0.03,0.05,0.10,0.20,0.50]
+print("Total cost: ",len(costs))
+
+costs.append(0.40)
+print(costs)
+costs.remove(0.03)
+print(costs)
+print("Now total cost: ",len(costs))
