@@ -19,3 +19,14 @@ are preferable for fixed collections, while sets are designed for unique
 elements and fast membership checks. A list comprehension is a concise way to
 describe a new list derived from an iterable.
 """
+# Example
+files=["report.pdf","docoment.pdf","resume.pdf","student.pdf"]
+
+print(files)
+print("Total files",len(files))
+files.append("notes.pdf")
+files.extend(["report.pdf"])
+files.remove("docoment.pdf")
+
+print(files)
+print("Total files now: ",len(files))
