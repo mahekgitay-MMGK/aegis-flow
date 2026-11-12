@@ -36,11 +36,18 @@ key-value pairs when iterating over a dictionary.
 print(student_data)
 """
 
-## Task
-file_info={"file": 'resume.pdf', 'cost' :0.05}
+## Example
+"""file_info={"file": 'resume.pdf', 'cost' :0.05}
 print(file_info)
 print("file: ", file_info["file"])
 print("cost: ", file_info["cost"])
 
 file_info["is_duplicate"]=False
 print(file_info)
+"""
+### Task
+agent_info={"name" : "Data Analyst Agent", "cost": 0.10,"is_live" : False}
+print(agent_info)
+print(agent_info["name"])
+agent_info["file"] = 100
+print(agent_info)
