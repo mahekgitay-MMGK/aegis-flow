@@ -24,3 +24,23 @@ Common operations:
 Use ``keys()``, ``values()``, and ``items()`` to access keys, values, and
 key-value pairs when iterating over a dictionary.
 """
+#Task
+
+"""student_data = [
+	{"Name": "Mahek", "Age": 18, "Marks": 90, "Grade": "A++"},
+	{"Name": "Riya", "Age": 16, "Marks": 77, "Grade": "B"},
+	{"Name": "Meck", "Age": 17, "Marks": 42, "Grade": "E"},
+	{"Name": "Reem", "Age": 20, "Marks": 60, "Grade": "C"},
+	{"Name": "Neha", "Age": 19, "Marks": 80, "Grade": "A"},
+]
+print(student_data)
+"""
+
+## Task
+file_info={"file": 'resume.pdf', 'cost' :0.05}
+print(file_info)
+print("file: ", file_info["file"])
+print("cost: ", file_info["cost"])
+
+file_info["is_duplicate"]=False
+print(file_info)
