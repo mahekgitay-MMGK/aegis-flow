@@ -51,3 +51,22 @@ print(agent_info)
 print(agent_info["name"])
 agent_info["file"] = 100
 print(agent_info)
+
+### mini project
+
+project_name="Aegis_Flow"
+print(project_name)
+
+files=[
+    {"files":"resume.pdf","cost": 0.03, "is_duplicate": False},
+    {"files":"notes.pdf","cost": 0.10, "is_duplicate": False}
+]
+
+print("Total files: ",len(files))
+for f in files:
+	print("files: ", f["files"], "cost:", f["cost"])
+	if f["cost"] > 0.05:
+		print(f["files"], "too costly")
+	else:
+		print(f["files"],"ok - send")
+    
