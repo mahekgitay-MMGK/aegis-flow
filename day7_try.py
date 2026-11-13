@@ -23,4 +23,8 @@ Important points:
 Example:
 """
 
-
+try:
+    print(10/0)
+except:
+    print("Can't divided by zero - App lives")
+print("After try- App still  running")
