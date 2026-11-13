@@ -23,8 +23,19 @@ Important points:
 Example:
 """
 
-try:
+'''try:
     print(10/0)
 except:
     print("Can't divided by zero - App lives")
+print("After try- App still  running")'''
+
+
+## Task
+files_info={"file": "resume.pdf", "cost" : 0.05}
+
+try:
+    print(files_info["hash"]," This key does Not exist - Will error")
+except:
+    print("No hash key -App lives")
+
 print("After try- App still  running")
