@@ -1,0 +1,26 @@
+"""
+Theory of try in Python
+
+The try statement is used to handle exceptions (errors) in Python.
+It helps prevent the program from crashing when something unexpected happens.
+
+Syntax:
+try:
+    # code that may raise an error
+except SomeError:
+    # code to handle the error
+else:
+    # runs when there is no error
+finally:
+    # always runs, whether there is an error or not
+
+Important points:
+- The try block contains code that can fail.
+- The except block catches the exception and handles it.
+- The else block runs only if no exception occurs.
+- The finally block always executes, used for cleanup like closing files.
+
+Example:
+"""
+
+
