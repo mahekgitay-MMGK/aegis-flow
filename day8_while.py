@@ -9,9 +9,18 @@ a condition rather than a fixed count.
 """
 # example
 
-cost=0
+'''cost=0
 while cost < 0.05:
     print("processing... cost",cost)
     cost= cost + 0.03
 
 print("stop - cost limit reched:",cost)
+'''
+##Task
+
+files_done=0
+while files_done <3 :
+    print("Processing file number:",files_done)
+    files_done = files_done + 1
+
+print(files_done)
