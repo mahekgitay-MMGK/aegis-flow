@@ -9,13 +9,13 @@ a condition rather than a fixed count.
 """
 # example
 
-'''cost=0
+cost=0
 while cost < 0.05:
     print("processing... cost",cost)
     cost= cost + 0.03
 
 print("stop - cost limit reched:",cost)
-'''
+
 ##Task
 
 files_done=0
@@ -24,3 +24,19 @@ while files_done <3 :
     files_done = files_done + 1
 
 print(files_done)
+
+### MINI project
+
+project_name="aegis-flow"
+print(project_name)
+total_cost=0
+file_count=0
+
+while total_cost < 0.10:
+    print("Adding file , cost:",total_cost)
+    total_cost= total_cost +0.03
+    file_count=file_count +1
+
+print("Total file added: ",file_count)
+print("Final cost:",total_cost)
+print("Stop - cost limit reached")
