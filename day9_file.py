@@ -11,8 +11,14 @@ processes it line by line. A ``with`` context manager closes the file when the
 block ends, even if an error occurs. Common problems include a missing file,
 insufficient permissions, or a decoding error caused by the wrong encoding.
 """
-## example
+## e
+# Example write
 
 f=open("aegis_result.txt","w")
 f.write("reume.pdf - cost 0.03 - Done")
-f.close
+f.close()
+## Example read
+f=open("aegis_result.txt","r")
+data=f.read()
+print(data)
+f.close()
