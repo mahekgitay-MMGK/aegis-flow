@@ -1,0 +1,2 @@
+resume.pdf - cost 0.03 -Done
+notes.pdf - cost 0.10 -Done

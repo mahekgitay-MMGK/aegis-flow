@@ -12,7 +12,7 @@ block ends, even if an error occurs. Common problems include a missing file,
 insufficient permissions, or a decoding error caused by the wrong encoding.
 """
 # Example write
-f=open("aegis_result.txt","w")
+'''f=open("aegis_result.txt","w")
 f.write("resume.pfd - cost 0.03 - Done")
 f.close()
 # Example of read
@@ -20,13 +20,30 @@ f=open("aegis_result.txt","r")
 data=f.read()
 print(data)
 f.close()
-
+'''
 ## Task
-f=open("my_files.txt","w")
-f.write("resume.pfd - cost 0.10 - Done")
+'''f=open("my_files.txt","w")
+f.write("notes.pfd - cost 0.10 - Done")
 f.close()
 
 f=open("my_files.txt","r")
 data=f.read()
+print(data)
+f.close()'''
+
+### mini project
+
+project_name=("aegis-Flow")
+print(project_name)
+
+f=open("hostory.txt","w")
+f.write("resume.pdf - cost 0.03 -Done\n")
+f.write("notes.pdf - cost 0.10 -Done\n")
+f.close()
+
+f=open("hostory.txt","r")
+data=f.read()
+print("Aegis-Flow History:")
+
 print(data)
 f.close()
