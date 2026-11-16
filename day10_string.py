@@ -17,3 +17,14 @@ print(e_mail)
 print(e_mail.strip())
 print(e_mail.strip().lower())
 print(e_mail.strip().replace("MAHEK","*****").lower())
+
+### Mini project
+
+print("Aegis-Flow")
+
+text="My name is Mahek Geete, my email is mahek@gmail.com"
+
+print("Before PII",text)
+
+safe_text=text.replace("Mahek Geete","***********").replace("mahek@gmail.com","*****")
+print("After PII: ",safe_text)
