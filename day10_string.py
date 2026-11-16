@@ -10,3 +10,10 @@ print(name.strip())
 print(name.strip().lower())
 print(name.strip().lower().replace(".pdf",".txt"))
 print(name.strip().upper())
+
+## Task
+e_mail=" MAHEK@GMAIL.COM "
+print(e_mail)
+print(e_mail.strip())
+print(e_mail.strip().lower())
+print(e_mail.strip().replace("MAHEK","*****").lower())
