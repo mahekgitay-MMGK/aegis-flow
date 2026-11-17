@@ -18,3 +18,10 @@ print(len(new_files))
 f.close()
 for f in new_files:
     print("file: ",f["file"],"cost: ",f["cost"])
+
+max_file= new_files[0]
+for f in new_files:
+    if f["cost"] > max_file["cost"]:
+        max_file=f
+
+print("Highest: ",max_file["file"],max_file["cost"])
