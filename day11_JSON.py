@@ -46,7 +46,7 @@ print(new_data)
 print("file: ",new_data["file"])
 f.close()"""
 
-import json
+'''import json
 agent={"name": "Data Analys", "cost": 0.10}
 
 #write file dump json
@@ -59,4 +59,28 @@ f= open("agent.json","r")
 new_agent=json.load(f)
 print(new_agent)
 print("name: ",new_agent["name"])
+f.close()'''
+
+import json
+
+files=[{"file": "report.docx", "cost": 0.05},
+    {"file": "report.docx", "cost": 0.05},
+    {"file": "photo.jpg", "cost": 0.02},
+    {"file": "invoice.pdf", "cost": 0.04},
+    {"file": "notes.txt", "cost": 0.01},
+    {"file": "presentation.pptx", "cost": 0.08}]
+
+# write file
+f=open("history.json","w")
+json.dump(files,f)
 f.close()
+
+# read file
+f=open("history.json","r")
+new_files=json.load(f)
+print(new_files)
+
+print("total: ",len(new_files))
+
+for file in new_files:
+    print("files: ",file["file"],"cost: ",file["cost"])
