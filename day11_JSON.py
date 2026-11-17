@@ -30,3 +30,18 @@ data: ``json.loads(text)`` parses a string, ``json.load(file)`` reads a file,
 ``json.dumps(value)`` creates a JSON string, and ``json.dump(value, file)``
 writes JSON to a file. Parsing invalid JSON raises ``json.JSONDecodeError``.
 """
+import json
+
+data={"file":"resume.pdf", "cost":0.03}
+
+#write Dict to json file
+f=open("data.json","w")
+json.dump(data,f)
+f.close()
+
+#Read json file
+f=open("data.json","r")
+new_data=json.load(f)
+print(new_data)
+print("file: ",new_data["file"])
+f.close()
