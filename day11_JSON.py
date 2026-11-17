@@ -30,7 +30,7 @@ data: ``json.loads(text)`` parses a string, ``json.load(file)`` reads a file,
 ``json.dumps(value)`` creates a JSON string, and ``json.dump(value, file)``
 writes JSON to a file. Parsing invalid JSON raises ``json.JSONDecodeError``.
 """
-"""import json
+import json
 
 data={"file":"resume.pdf", "cost":0.03}
 
@@ -44,9 +44,9 @@ f=open("data.json","r")
 new_data=json.load(f)
 print(new_data)
 print("file: ",new_data["file"])
-f.close()"""
+f.close()
 
-'''import json
+import json
 agent={"name": "Data Analys", "cost": 0.10}
 
 #write file dump json
@@ -59,7 +59,7 @@ f= open("agent.json","r")
 new_agent=json.load(f)
 print(new_agent)
 print("name: ",new_agent["name"])
-f.close()'''
+f.close()
 
 import json
 
