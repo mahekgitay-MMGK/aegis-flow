@@ -21,3 +21,10 @@ if a1.check():count=count+1
 if a2.check():count=count+1
 if a3.check():count=count+1
 print (count)
+
+cheapest=a1
+if a2.cost < cheapest.cost:
+    cheapest=a2
+if a3.cost < cheapest.cost:
+    cheapest=a3
+print("Cheap value:",cheapest.name,cheapest.cost)
