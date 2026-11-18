@@ -25,7 +25,7 @@ agent2=Agent("pII Agent")
 print(agent2.name)
 '''
 ### Task
-class File:
+'''class File:
     def __init__(self,name,cost):
         self.name=name
         self.cost=cost
@@ -35,4 +35,22 @@ print(file1.name,file1.cost)
 file2= File("notes.pdf",0.10)
 print(file2.name,file2.cost)
 
-        
+        '''
+### Mini project
+class Agent:
+    def __init__(self,name,cost):
+        self.name=name
+        self.cost=cost
+
+    def check(self):
+        if self.cost > 0.05:
+            print(self.name,"Toocostly - stop")
+        else:
+            print(self.name,"ok - send")
+
+a1=Agent("Data analyst agent",0.03)
+a1.check()
+
+a2=Agent("PII Agent",0.10)
+a2.check()
+    
