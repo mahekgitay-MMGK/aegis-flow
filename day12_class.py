@@ -14,3 +14,12 @@ class reuse or extend another class's behavior; encapsulation groups related
 state and operations; and polymorphism allows different object types to
 respond to the same method call in their own way.
 """
+## Example
+class Agent:
+    def __init__(self,name):
+        self.name=name
+agent1=Agent("Data Analyst Agent")
+print(agent1.name)
+
+agent2=Agent("pII Agent")
+print(agent2.name)
