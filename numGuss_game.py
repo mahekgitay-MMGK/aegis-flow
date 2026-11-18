@@ -32,7 +32,7 @@ def playing_game(number, attempt=1):
         print("Please enter number")
         return playing_game(number, attempt)
     if gusse < 1 or gusse >100  :
-        
+        print("")
 
 
 
