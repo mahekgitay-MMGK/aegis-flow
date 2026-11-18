@@ -15,7 +15,7 @@ state and operations; and polymorphism allows different object types to
 respond to the same method call in their own way.
 """
 ## Example
-class Agent:
+'''class Agent:
     def __init__(self,name):
         self.name=name
 agent1=Agent("Data Analyst Agent")
@@ -23,3 +23,16 @@ print(agent1.name)
 
 agent2=Agent("pII Agent")
 print(agent2.name)
+'''
+### Task
+class File:
+    def __init__(self,name,cost):
+        self.name=name
+        self.cost=cost
+file1 = File("resume.pdf", 0.03)
+print(file1.name,file1.cost)
+
+file2= File("notes.pdf",0.10)
+print(file2.name,file2.cost)
+
+        
