@@ -18,3 +18,15 @@ session. Packages organize related modules using directories and __init__.py fil
 Relative imports work within packages, while absolute imports specify the full module
 path from the project or library root.
 """
+#Example
+
+class Agent:
+    def __init__(self,name,cost):
+        self.name=name
+        self.cost=cost
+    def check(self):
+        if self.cost <=0.05:
+            return True
+        else:
+            return False
+
