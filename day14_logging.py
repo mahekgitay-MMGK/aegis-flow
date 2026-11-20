@@ -22,3 +22,15 @@ and more detailed during troubleshooting. Useful log messages include enough
 context to explain what happened, but should never expose secrets such as
 passwords or access tokens.
 """
+# Example
+def log(massage):
+    f=open("log.txt","a")
+    f.write(massage +"\n")
+    f.close()
+
+log("resume.pdf - cost 0.03 - ok")
+log("notes.pdf - cost 0.10 - Too costly - stop")
+
+f=open("log.txt","r")
+print(f.read())
+f.close()
