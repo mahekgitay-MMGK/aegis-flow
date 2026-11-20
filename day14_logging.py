@@ -36,12 +36,12 @@ print(f.read())
 f.close()"""
 
 def log(massage):
-    f=open("log1.txt","a")
+    f=open("log.txt","a")
     f.write(massage + "\n")
     f.close()
 log("a.pdf - cost 0.02 - ok")
 log("b.pdf - cost 0.08 - stop")
 
-f=open("log1.txt","r")
+f=open("log.txt","r")
 print(f.read())
 f.close()
