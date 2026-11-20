@@ -1,7 +1,7 @@
 from agent import Agent
 
 def log(massage):
-    f=open("logAgent.txt","a")
+    f=open("log.txt","a")
     f.write(massage +"\n")
     f.close()
 
@@ -15,6 +15,6 @@ for a in agents:
         log(a.name + "-Ok-Send ")
     else:
         log(a.name+ "- Too costly-stop")
-f=open("logAgent.txt","r")
+f=open("log.txt","r")
 print(f.read())
 f.close()
