@@ -23,7 +23,7 @@ context to explain what happened, but should never expose secrets such as
 passwords or access tokens.
 """
 # Example
-def log(massage):
+"""def log(massage):
     f=open("log.txt","a")
     f.write(massage +"\n")
     f.close()
@@ -32,5 +32,16 @@ log("resume.pdf - cost 0.03 - ok")
 log("notes.pdf - cost 0.10 - Too costly - stop")
 
 f=open("log.txt","r")
+print(f.read())
+f.close()"""
+
+def log(massage):
+    f=open("log1.txt","a")
+    f.write(massage + "\n")
+    f.close()
+log("a.pdf - cost 0.02 - ok")
+log("b.pdf - cost 0.08 - stop")
+
+f=open("log1.txt","r")
 print(f.read())
 f.close()

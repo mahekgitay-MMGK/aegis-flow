@@ -1,0 +1,2 @@
+a.pdf - cost 0.02 - ok
+b.pdf - cost 0.08 - stop
