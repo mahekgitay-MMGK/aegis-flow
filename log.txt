@@ -1,2 +1,6 @@
 resume.pdf - cost 0.03 - ok
 notes.pdf - cost 0.10 - Too costly - stop
+PII Agent-Ok-Send 
+Cost Agent- Too costly-stop
+a.pdf - cost 0.02 - ok
+b.pdf - cost 0.08 - stop
