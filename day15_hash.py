@@ -11,7 +11,7 @@ they should not be used as permanent identifiers.
 """
 
 
-import hashlib
+'''import hashlib
 
 text1="resume.pdf content"
 text3="notes.pdf content"
@@ -35,4 +35,26 @@ else:
 if h3==h2:
     print( "h3 and h2 duplicate - skip")
 else:
-    print( "h3 and h2 new - send")
+    print( "h3 and h2 new - SKIP")
+'''
+import hashlib
+
+a1="hello world"
+b2="hello world"
+c3="hello python"
+
+a=hashlib.sha256(a1.encode()).hexdigest()
+b=hashlib.sha256(b2.encode()).hexdigest()
+c=hashlib.sha256(c3.encode()).hexdigest()
+if a== b:
+    print("a1 and b2 duplicate - skip")
+else:
+    print("a1 and b2 new send")
+if c == b:
+    print("c3 and b2 duplicate - skip")
+else:
+    print("c3 and b2 new send")
+if a== c:
+    print("a1 and c3 duplicate - skip")
+else:
+    print("a1 and c3 new send")
