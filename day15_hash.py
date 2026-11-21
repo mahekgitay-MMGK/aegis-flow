@@ -37,7 +37,7 @@ if h3==h2:
 else:
     print( "h3 and h2 new - SKIP")
 '''
-import hashlib
+'''import hashlib
 
 a1="hello world"
 b2="hello world"
@@ -57,4 +57,20 @@ else:
 if a== c:
     print("a1 and c3 duplicate - skip")
 else:
-    print("a1 and c3 new send")
+    print("a1 and c3 new send")'''
+
+
+import hashlib
+def make_hash(text):
+    return hashlib.sha256(text.encode()).hexdigest()
+
+files=["resume.pdf content","notes.pdf content","resume.pdf content"]
+seen=[]
+
+for f in files:
+    h= make_hash(f)
+    if h in seen:
+        print(f[:12]," duplicate skip")
+    else:
+        print(f[:12]," new - send")
+        seen.append(h)
