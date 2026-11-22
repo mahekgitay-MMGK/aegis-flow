@@ -15,3 +15,11 @@ for f in files:
         seen.append(h)
         count += 1
 print(count,f)
+
+unique=[]
+for f in files:
+    if f not in seen:
+        seen.append(f)
+    
+        unique.append(f)
+print(unique)
