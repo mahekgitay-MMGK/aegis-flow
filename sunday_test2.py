@@ -13,7 +13,12 @@ f.close()
 class Agent:
     def __init__(self,name,cost):
         self.name=name
-        self.name=cost
+        self.cost=cost
+    def check(self):
+        if self.cost <= 0.05:
+            return True
+        else:
+            return False
 a1=Agent("PII",0.02)
 print(a1.name)
-        
+
