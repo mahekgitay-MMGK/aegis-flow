@@ -12,3 +12,8 @@ f=open("log2.txt","r")
 print(f.read())
 f.close()
 
+import hashlib
+
+text="hello world"
+h1=hashlib.sha256(text.encode()).hexdigest()
+print(h1[:10])
