@@ -21,6 +21,7 @@ reconciliation with general-ledger control accounts supports accurate records.
 Consistent, reasonable classification and allocation are essential because
 cost information influences management decisions.
 """
+## Example
 '''files=[{"file":"a.pdf","cost":0.03}, 
     {"file":"b.pdf","cost":0.10}, 
     {"file":"c.pdf","cost":0.02}, 
@@ -36,9 +37,9 @@ for f in files:
         total_save=total_save +f["cost"]
 
 print("total_spend",total_spend)
-print("total_save",total_save)'''
+print("total_save",total_save)
 
-
+### TAsk 
 files=[{"file":"x.pdf","cost":0.01}, 
     {"file":"y.pdf","cost":0.08}, 
     {"file":"z.pdf","cost":0.04}, 
@@ -54,4 +55,32 @@ for f in files:
         print(f["file"],"STOP - SAVE",f["cost"])
         total_save=total_save+ f["cost"]
 print("Total spend : ",total_spend)
-print("Total save : ",total_save)
+print("Total save : ",total_save)'''
+
+# Mini project
+
+import hashlib , json
+def make_hash(text):
+    return hashlib.sha256(text.encode()).hexdigest()
+def log(massage):
+    f=open("dat17_log3.txt","a")
+    f.write(massage + "\n")
+    f.close()
+files=["resume content","resume content","note content"]
+seen=[]
+total_spend=0
+total_save=0
+for f in files:
+    h=make_hash(f)
+    if h in seen:
+        print("DUPLICATE -skip - save 0.05")
+        total_save=total_save + 0.05
+        log("DUPLICATE -skip - save 0.05")
+    else:
+        seen.append(h)
+        print("New-SEND- SPEND 0.05")
+        total_spend=total_spend+0.05
+        log("New - send- save 0.05")
+print("Total spend:",total_spend)
+print("Total save:",total_save)
+log(f"Total spend:{total_spend} - Total save: {total_save}")
