@@ -6,3 +6,19 @@ New - send- save 0.05
 DUPLICATE -skip - save 0.05
 New - send- save 0.05
 Total spend:0.1 - Total save: 0.05
+New - send- save 0.05
+DUPLICATE -skip - save 0.05
+New - send- save 0.05
+Total spend:0.1 - Total save: 0.05
+New - send- save 0.05
+DUPLICATE -skip - save 0.05
+New - send- save 0.05
+Total spend:0.1 - Total save: 0.05
+New - send- save 0.05
+DUPLICATE -skip - save 0.05
+New - send- save 0.05
+Total spend:0.1 - Total save: 0.05
+New - send- save 0.05
+DUPLICATE -skip - save 0.05
+New - send- save 0.05
+Total spend:0.1 - Total save: 0.05
