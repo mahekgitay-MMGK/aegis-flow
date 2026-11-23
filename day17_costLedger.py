@@ -21,3 +21,19 @@ reconciliation with general-ledger control accounts supports accurate records.
 Consistent, reasonable classification and allocation are essential because
 cost information influences management decisions.
 """
+files=[{"file":"a.pdf","cost":0.03}, 
+    {"file":"b.pdf","cost":0.10}, 
+    {"file":"c.pdf","cost":0.02}, 
+       ]
+total_spend=0
+total_save=0
+for f in files:
+    if f["cost"] <= 0.05:
+        print(f["file"],"- SEND - SPEND",f["cost"])
+        total_spend=total_spend+ f["cost"]
+    else:
+        print(f["file"],"stop - save",f["cost"])
+        total_save=total_save +f["cost"]
+
+print("total_spend",total_spend)
+print("total_save",total_save)
