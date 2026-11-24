@@ -64,10 +64,9 @@ def check_pii(text):
         return "safe - send"
 files=[
     "Hello world",
-    "Email me at a@test.com"
+    "Email me at a@test.com",
     "No email here",
     "contact b@test.com now"
 ]
 for f in files:
-    if "@" in files:
-        print(f,"->",check_pii(f))
+    print(f,"->",check_pii(f))
