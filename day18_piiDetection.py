@@ -39,3 +39,18 @@ if "9876554321" in text:
     print("PII found - Email _ stop or Hide")
 else:
     print("NO pII - Safe -send")
+
+print("\n\n\n\n\n\n\n")
+
+text="contact me at ravi@test.com"
+
+if "@" in text:
+    print(" pII Email - stop-hide")
+else: 
+    print("NO pII - Safe -send")
+
+text2="Hello world"
+if "@" in text2:
+    print(" pII Email - stop-hide")
+else: 
+    print("NO pII - Safe -send")
