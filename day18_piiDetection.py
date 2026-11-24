@@ -57,3 +57,17 @@ else:
 
 print("\n\n\n\n\n\n\n")
 
+def check_pii(text):
+    if "@" in text:
+        return "pII Email - stop-hide"
+    else:
+        return "safe - send"
+files=[
+    "Hello world",
+    "Email me at a@test.com"
+    "No email here",
+    "contact b@test.com now"
+]
+for f in files:
+    if "@" in files:
+        print(f,"->",check_pii(f))
