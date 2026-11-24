@@ -6,7 +6,7 @@ def check_pii(text):
 
 files=[
     "Hello",
-    " call 98765",
+    "call 98765",
     "No phone"
 
 ]
