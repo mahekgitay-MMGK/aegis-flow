@@ -26,3 +26,16 @@ redaction, and protect any retained results. Requirements and definitions of
 PII vary by jurisdiction and use case, so detection should support—not replace—
 privacy and legal review.
 """
+
+# Example
+text="my email is mahek@gmail.com and phone is 9876554321"
+
+if "@" in text:
+    print(" PII found - Email _ stop or Hide")
+else:
+    print("NO pII - Safe -send")
+
+if "9876554321" in text:
+    print("PII found - Email _ stop or Hide")
+else:
+    print("NO pII - Safe -send")
