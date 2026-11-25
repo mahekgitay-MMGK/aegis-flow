@@ -95,10 +95,10 @@ def check_pii(text):
     else:
         return "safe - send"
 files=[
-    "My email is x@y.com",
-		"hi @",
-		"phone 1234567890",
-		"phone 12"
+    "Hello world",
+    "Mail me a@test.com",
+    "call 9807654321",
+    "hi @"
 ]
 for f in files:
     print(f,"------>",check_pii(f))
