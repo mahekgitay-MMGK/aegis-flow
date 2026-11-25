@@ -82,4 +82,23 @@ for t in texts:
         print(t,"Real phone found")
     else:
         print(t,"=> safe no real PII")
-        
+
+print("\n\n\n\n\n\n\n\n ")
+import re
+def check_pii(text):
+    email_pattern=r"[a-z]+@[a-z]+\.[a-z]+"
+    phone_pattern=r"\d{10}"
+    if re.search(email_pattern,text):
+        return "Email PII - HIDE"
+    elif re.search(phone_pattern,text):
+        return " Phone PII - HIDE"
+    else:
+        return "safe - send"
+files=[
+    "My email is x@y.com",
+		"hi @",
+		"phone 1234567890",
+		"phone 12"
+]
+for f in files:
+    print(f,"------>",check_pii(f))
