@@ -63,3 +63,23 @@ for t in texts:
         print(t,"-> Real phone PII")
     else:
         print(t,"=> safe no real PII")
+
+print("\n\n\n\n\n\n\n\n ")
+
+import re
+texts=[
+    "My email is x@y.com",
+    "hi @",
+    "pjone 1234567890",
+    "phone 12"
+]
+email_pattern=r"[a-z]+@[a-z]+\.[a-z]+"
+phone_pattern=r"\d{10}"
+for t in texts:
+    if re.search(email_pattern,t):
+        print(t,"-> Real Email PII")
+    elif re.search(phone_pattern,t):
+        print(t,"Real phone found")
+    else:
+        print(t,"=> safe no real PII")
+        
