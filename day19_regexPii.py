@@ -51,7 +51,7 @@ import re
 texts=[
     " My email is a@test.com",
     "hello @ there",
-    "call me 9876543212",
+    "call me 9876543210",
     "Call me 123",
 ]
 email_pattern=r"[a-z]+@[a-z]+\.[a-z]+"
@@ -59,7 +59,7 @@ phone_pattern=r"\d{10}"
 for t in texts:
     if re.search(email_pattern, t):
         print(t,"-> Real Email PII")
-    elif re.search(email_pattern, t):
+    elif re.search(phone_pattern, t):
         print(t,"-> Real phone PII")
     else:
         print(t,"=> safe no real PII")
