@@ -23,4 +23,4 @@ for f in files:
 print("count:",count,"Duplicate")
 print("safe count",safe_count, "safe")
 print("Total spend",total_spend)
-print("Total save",total_save)
+print("Total save",total_save,"")
