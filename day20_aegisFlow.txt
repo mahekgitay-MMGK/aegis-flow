@@ -1,0 +1,7 @@
+file: hello -- new, spend cost: 0.05
+file: a@test.com -- new, spend cost: 0.1
+file: b@test.com -- new, spend cost: 0.15000000000000002
+file: call 9008 -- new, spend cost: 0.2
+file: call 1234567890 -- new, spend cost: 0.25
+ file:b@test.com-- duplicate,save cost: 0.05
+ file:hello-- duplicate,save cost: 0.1
