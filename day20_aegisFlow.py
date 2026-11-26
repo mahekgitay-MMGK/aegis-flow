@@ -1,4 +1,5 @@
 import hashlib,re
+
 def make_hash(text):
     return hashlib.sha256(text.encode()).hexdigest()
 def check_pii(text):
