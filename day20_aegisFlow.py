@@ -39,4 +39,4 @@ for f in files:
         print(f,"New -",result,"spend 0.05")
         log(f"file: {f} -- new, spend cost: {total_spend}")
 print("Total spend",total_spend)
-print("Total save",total_save)
+print("Total save:",total_save)
