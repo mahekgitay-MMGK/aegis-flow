@@ -45,3 +45,6 @@ f.write("a@test.com")
 f.write("Hello \n")
 f.close()
 
+f=open("day21_test.txt","r")
+lines=f.readline()
+f.close()
