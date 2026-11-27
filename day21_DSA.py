@@ -12,6 +12,8 @@ f.close()
 seen=[]
 count=0
 safe_count=0
+total_save=0
+
 f=open("day21_DSA.txt","r")
 lines=f.readlines()
 f.close()
@@ -22,9 +24,11 @@ for line in lines:
     if h in seen:
         print(line,"--->Duplicate ")
         count=count+1
+        total_save=count *0.05
     else:
         seen.append(h)
         print(line,"---> safe")
         safe_count=safe_count+1
 print("count",count)
 print("safe count",safe_count)
+print("totalsave",round(total_save,2))
