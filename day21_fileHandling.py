@@ -134,7 +134,7 @@ def make_hash(text):
 def check_pii(text):
     if "@" in text:
         return "Email PII FOUND "
-    elif "0987654321" in text:
+    elif "1234567890" in text:
         return "Phone PII found"
     else:
         return "Safe"
