@@ -30,3 +30,18 @@ into memory at once.
 """
 
 # example
+
+def check_pii(text):
+    if "@" in text:
+        return " Email PII found"
+    elif "0987654321"in  text:
+        return "Phone PII found"
+    else:
+        return "Safe"
+
+f=open("day21_test.txt","w")
+f.write("Hi\n")
+f.write("a@test.com")
+f.write("Hello \n")
+f.close()
+
