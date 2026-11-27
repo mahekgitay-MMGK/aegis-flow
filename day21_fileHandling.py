@@ -149,3 +149,20 @@ f.close()
 f=open("day21_project.txt","r")
 lines=f.readlines()
 f.close()
+seen=[]
+total_spend=0
+total_save=0
+
+for line in lines:
+    line=line.strip()
+    h=make_hash(line)
+    if h in seen:
+        print(line,"Duplicate save 0.05")
+        total_save=total_save + 0.05
+    else:
+        seen.append(h)
+        result= check_pii(line)
+        print(line,"SAFE new spend 0.05",result)
+
+print("Total spend:",round(total_spend,2))
+print("total save:",round(total_save ,2))
