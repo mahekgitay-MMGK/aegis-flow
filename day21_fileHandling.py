@@ -67,3 +67,10 @@ def check_pii(text):
     else:
         return "safe"
 
+f=open("day21_task.txt","w")
+f.write("Hi\n")
+f.write("b@text.com\n")
+f.write("1234567890\n")
+f.write("Bye\n")
+f.close()
+
