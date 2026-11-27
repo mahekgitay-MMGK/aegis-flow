@@ -125,3 +125,27 @@ for line in lines:
         total_spend=total_spend+0.05
 print("Total spend",round(total_spend,2))
 print("Total save",round(total_save,2))
+
+print("\n\n\n\n\n\n\n\n")
+
+import hashlib
+def make_hash(text):
+    return hashlib.sha256(text.encode()).hexdigest()
+def check_pii(text):
+    if "@" in text:
+        return "Email PII FOUND "
+    elif "0987654321" in text:
+        return "Phone PII found"
+    else:
+        return "Safe"
+f=open("day21_project.txt","w")
+f.write("hi\n")
+f.write("b@test.com\n")
+f.write("hi\n")
+f.write("1234567890\n")
+f.write("12\n")
+f.close()
+
+f=open("day21_project.txt","r")
+lines=f.readlines()
+f.close()
