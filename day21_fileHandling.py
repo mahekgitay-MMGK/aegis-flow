@@ -96,4 +96,32 @@ def check_pii(text):
     else:
         return "safe"
 
-    
+f=open("day21_miniProject.txt","w")
+f.write("Hello\n")
+f.write("a@test.com\n")
+f.write("Hello\n")
+f.write("1234567890\n")
+f.write("1990\n")
+f.close()
+
+f=open("day21_miniProject.txt","r")
+lines=f.readlines()
+f.close()
+seen=[]
+total_spend=0
+total_save=0
+
+for line in lines:
+    line=line.strip()
+    h=make_hash(line)
+
+    if h in seen:
+        print(line,"Duplicate skip save 0.05")
+        total_save=total_save+0.05
+    else:
+        seen.append(h)
+        result=check_pii(line)
+        print(line,"New spend 0.05",result)
+        total_spend=total_spend+0.05
+print("Total spend",round(total_spend,2))
+print("Total save",round(total_save,2))
