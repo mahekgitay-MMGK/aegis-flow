@@ -41,8 +41,8 @@ def check_pii(text):
 
 f=open("day21_test.txt","w")
 f.write("Hi\n")
-f.write("a@test.com")
-f.write("Hello \n")
+f.write("a@test.com\n")
+f.write("Hello\n")
 f.close()
 
 f=open("day21_test.txt","r")
