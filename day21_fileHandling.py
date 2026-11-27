@@ -56,7 +56,7 @@ for line in lines:
     result=check_pii(line)
     print(line,"----->",result)
 
-
+print("\n\n\n\n\n\n\n\n")
 #tasks
 
 def check_pii(text):
@@ -74,3 +74,11 @@ f.write("1234567890\n")
 f.write("Bye\n")
 f.close()
 
+f=open("day21_task.txt","r")
+lines=f.readlines()
+f.close()
+
+for line in lines:
+    line=line.strip()
+    result=check_pii(line)
+    print(line,"---->",result)
