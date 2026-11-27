@@ -58,3 +58,12 @@ for line in lines:
 
 
 #tasks
+
+def check_pii(text):
+    if "@" in text:
+        return "Email PII found"
+    elif "1234567890" in text:
+        return "Phone PII found"
+    else:
+        return "safe"
+
