@@ -48,3 +48,10 @@ f.close()
 f=open("day21_test.txt","r")
 lines=f.readline()
 f.close()
+
+print("lines: ",lines)
+
+for line in lines:
+    line=line.strip()
+    result=check_pii(line)
+    print(line,"----->",result)
