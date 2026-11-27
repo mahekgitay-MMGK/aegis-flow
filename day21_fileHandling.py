@@ -84,3 +84,16 @@ for line in lines:
     print(line,"---->",result)
 print("\n\n\n\n\n\n\n\n")
 
+import hashlib
+def make_hash(text):
+    return hashlib.sha256(text.encode()).hexdigest()
+
+def check_pii(text):
+    if "@" in text:
+        return "Email PII FOUND"
+    elif "1234567890" in text:
+        return "Phone PII found"
+    else:
+        return "safe"
+
+    
