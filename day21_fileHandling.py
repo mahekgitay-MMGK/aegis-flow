@@ -34,7 +34,7 @@ into memory at once.
 def check_pii(text):
     if "@" in text:
         return " Email PII found"
-    elif "0987654321"in  text:
+    elif "0987654321" in  text:
         return "Phone PII found"
     else:
         return "Safe"
@@ -46,7 +46,7 @@ f.write("Hello \n")
 f.close()
 
 f=open("day21_test.txt","r")
-lines=f.readline()
+lines=f.readlines()
 f.close()
 
 print("lines: ",lines)
