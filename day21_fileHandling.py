@@ -163,6 +163,7 @@ for line in lines:
         seen.append(h)
         result= check_pii(line)
         print(line,"SAFE new spend 0.05",result)
+        total_spend=total_spend +0.05
 
 print("Total spend:",round(total_spend,2))
 print("total save:",round(total_save ,2))
