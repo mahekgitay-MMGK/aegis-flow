@@ -40,7 +40,7 @@ for line in lines:
     h= make_hash(line)
     if h in seen:
         print(line,"---> DUPLICATE SAVE 0.05")
-        total_save=total_save+0.5
+        total_save=total_save+0.05
         count=count+1
         log(f"lines: {line},Total Save:{total_save},count:{count}")
     else:
