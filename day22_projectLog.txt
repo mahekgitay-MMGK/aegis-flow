@@ -1,0 +1,25 @@
+lines:hi,Total spend:0.05,Result:8f434346648f6b96df89dda901c5176b10a6d83961dd3c1ac88b59b2dc327aa4,Hidden:hi,safe count:1
+lines:x@y.com,Total spend:0.1,Result:b972b3805b538e19fe8eaced33daaad03eec0f961973de3b471ece4e5cffb084,Hidden:***@gmail.com,safe count:2
+lines:9999999999,Total spend:0.15000000000000002,Result:ce3a598687c8d2e5aa6bedad20e059b4a78cca0adad7e563b07998d5cd226b8c,Hidden:**********,safe count:3
+lines:hi,Total spend:0.2,Result:8f434346648f6b96df89dda901c5176b10a6d83961dd3c1ac88b59b2dc327aa4,Hidden:hi,safe count:4
+lines:1111,Total spend:0.25,Result:0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c,Hidden:1111,safe count:5
+lines:hi,Total spend:0.05,Result:8f434346648f6b96df89dda901c5176b10a6d83961dd3c1ac88b59b2dc327aa4,Hidden:hi,safe count:1
+lines:x@y.com,Total spend:0.1,Result:b972b3805b538e19fe8eaced33daaad03eec0f961973de3b471ece4e5cffb084,Hidden:***@gmail.com,safe count:2
+lines:9999999999,Total spend:0.15000000000000002,Result:ce3a598687c8d2e5aa6bedad20e059b4a78cca0adad7e563b07998d5cd226b8c,Hidden:**********,safe count:3
+lines:hi,Total spend:0.2,Result:8f434346648f6b96df89dda901c5176b10a6d83961dd3c1ac88b59b2dc327aa4,Hidden:hi,safe count:4
+lines:1111,Total spend:0.25,Result:0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c,Hidden:1111,safe count:5
+lines:hi,Total spend:0.05,Result:Safe,Hidden:hi,safe count:1
+lines:x@y.com,Total spend:0.1,Result:Email PII FOUND,Hidden:***@gmail.com,safe count:2
+lines:9999999999,Total spend:0.15000000000000002,Result: Phone PII FOUND,Hidden:**********,safe count:3
+lines: hi,Total Save:0.5,count:1
+lines:1111,Total spend:0.2,Result:Safe,Hidden:1111,safe count:4
+lines:hi,Total spend:0.05,Result:Safe,Hidden:hi,safe count:1
+lines:x@y.com,Total spend:0.1,Result:Email PII FOUND,Hidden:***@gmail.com,safe count:2
+lines:9999999999,Total spend:0.15000000000000002,Result: Phone PII FOUND,Hidden:**********,safe count:3
+lines: hi,Total Save:0.5,count:1
+lines:1111,Total spend:0.2,Result:Safe,Hidden:1111,safe count:4
+lines:hi,Total spend:0.05,Result:Safe,Hidden:hi,safe count:1
+lines:x@y.com,Total spend:0.1,Result:Email PII FOUND,Hidden:***@gmail.com,safe count:2
+lines:9999999999,Total spend:0.15000000000000002,Result: Phone PII FOUND,Hidden:**********,safe count:3
+lines: hi,Total Save:0.05,count:1
+lines:1111,Total spend:0.2,Result:Safe,Hidden:1111,safe count:4
