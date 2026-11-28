@@ -61,3 +61,46 @@ for t in texts:
     print("Original",t)
     print("Hidden",hidden)
     print("---")
+
+print("\n\n\n\n\n\n")
+### mini practice project
+
+import hashlib ,re
+def make_hash(text):
+    return hashlib.sha256(text.encode()).hexdigest()
+
+def hide_Pii(text):
+    text=re.sub(r"[a-z]+@[a-z]+\.[a-z]+","***@gmail.com",text)
+    text=re.sub(r"\d{10}","**********",text)
+    return text
+def check_pii(text):
+    email_pattern=r"[a-z]+@[a-z]+\.[a-z]+"
+    phone_pattern=r"\d{10}"
+    if re.search(email_pattern,text):
+        return "Email PII FOUND"
+    elif re.search(phone_pattern,text):
+        return "Phone PIII FOUND"
+    else:
+        return "safe"
+f = open("day22_hidePii.txt","w")
+f.write("Hello\n")
+f.write("a@text.com\n")
+f.write("Call 9876543210\n")
+f.write("Hello\n")
+f.close()
+
+f=open("day22_hidePii.txt","r")
+lines=f.readlines()
+f.close()
+seen=[]
+
+for line in lines:
+    line=line.strip()
+    h=make_hash(line)
+    if h in seen:
+        print(line,"---> Duplicate")
+    else:
+        seen.append(h)
+        result=check_pii(line)
+        hidden=hide_pii(line)
+        print(line,"---> New ","-",result,"--Hidden:",hidden)
