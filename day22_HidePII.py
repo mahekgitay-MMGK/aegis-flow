@@ -40,3 +40,24 @@ for t in texts:
     print("Original",t)
     print("Hidden:",hidden)
     print("----")
+
+## Task
+
+print("\n\n\n\n\n\n")
+import re
+
+def hide_pii(text):
+    text=re.sub(r"[a-z]+@[a-z]+\.[a-z]+","***@gmail.com",text)
+    text=re.sub(r"\d{10}","**********",text)
+    return text
+
+texts=[
+    "x@y.com",
+    "1234567890",
+    "Hello",
+]
+for t in texts:
+    hidden=hide_pii(t)
+    print("Original",t)
+    print("Hidden",hidden)
+    print("---")
