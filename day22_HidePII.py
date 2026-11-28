@@ -22,3 +22,21 @@ organizational policies, validating the masking or redaction rules, and ensuring
 that sensitive data is not exposed through backups, logs, screenshots, exports,
 or error messages.
 """
+## Example
+
+import re
+
+def hide_pii(text):
+    text=re.sub(r"[a-z]+@[a-z]+\.[a-z]+","***@gmail.com",text)
+    text=re.sub(r"\d{10}","**********",text)
+    return text
+texts=[
+    "My email is a@test.com",
+    "call me  9876543210",
+    "Hello world",
+]
+for t in texts:
+    hidden=hide_pii(t)
+    print("Original",t)
+    print("Hidden:",hidden)
+    print("----")
